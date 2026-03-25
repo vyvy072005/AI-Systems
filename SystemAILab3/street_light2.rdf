@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight/"
+     xml:base="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:StreetLight="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#hasAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#hasAction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Rule"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#hasCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#hasCondition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Rule"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Condition3"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#hasLightLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#hasLightLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Condition3"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#hasTimeofDay -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#hasTimeofDay">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Condition3"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#hasWeather -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#hasWeather">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Condition3"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Action"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Condition3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Condition3"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Rule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Rule"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Action_Dim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Action_Dim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Action_TurnOff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Action_TurnOff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Action_TurnOn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Action_TurnOn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Condition_LowLight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Condition_LowLight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Condition3"/>
+        <StreetLight:hasLightLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</StreetLight:hasLightLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Condition_Night -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Condition_Night">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Condition3"/>
+        <StreetLight:hasTimeofDay>Night</StreetLight:hasTimeofDay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Condition_Rain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Condition_Rain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Condition3"/>
+        <StreetLight:hasWeather>Rain</StreetLight:hasWeather>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Rule1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Rule1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Rule"/>
+        <StreetLight:hasAction rdf:resource="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Action_TurnOn"/>
+        <StreetLight:hasCondition rdf:resource="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Condition_LowLight"/>
+        <StreetLight:hasCondition rdf:resource="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Condition_Night"/>
+        <StreetLight:hasCondition rdf:resource="http://www.semanticweb.org/vyvy07/ontologies/2026/2/StreetLight#Condition_Rain"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
